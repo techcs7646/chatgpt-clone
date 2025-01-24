@@ -251,3 +251,81 @@
     outline: none; /* Removes default outline */
   }
   
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .left {
+      width: 100%;
+      height: auto;
+      min-height: 60px;
+    }
+
+    .right {
+      width: 100%;
+    }
+
+    .history {
+      display: none; /* Hide history on mobile by default */
+    }
+
+    .fourBox {
+      gap: 10px;
+    }
+
+    .box {
+      width: calc(50% - 10px); /* 2 boxes per row on mobile */
+      height: 120px;
+    }
+
+    .search_container {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .box {
+      width: 100%; /* 1 box per row on very small screens */
+      height: 100px;
+    }
+
+    .right-nav {
+      padding: 5px 10px;
+    }
+
+    .chatgpt-btn {
+      font-size: 12px;
+      padding: 6px 8px;
+    }
+
+    .middle {
+      padding: 10px;
+    }
+
+    .logo img {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .search_container {
+      width: 50%; /* Narrower input on large screens */
+    }
+
+    .box {
+      width: 180px;
+      height: 180px;
+    }
+
+    .left {
+      width: 15%;
+    }
+
+    .right {
+      width: 85%;
+    }
+  }
+  
